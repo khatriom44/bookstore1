@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,20 +22,191 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <title>React App</title>
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <div class="loader-wrapper">
+      <img src="/static/media/loader.7b9e6209b10d106cdb0a.gif" alt="loader">
+    </div>
+    <div class="wrapper">
+      <div class="jss1">
+        <header
+          class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary site-header MuiPaper-elevation4"
+          id="header">
+          <div class="top-header" style="display: block;"></div>
+          <div class="bottom-header">
+            <div class="container">
+              <div class="header-wrapper">
+                <div class="logo-wrapper"><a class="site-logo" title="logo" href="/"><img
+                      src="/static/media/site-logo.005b78aa01d0b4eadda3fa91c02202c5.svg" alt="logo"></a></div>
+                <div class="nav-wrapper">
+                  <div class="top-right-bar">
+                    <ul class="MuiList-root top-nav-bar MuiList-padding">
+                      <li class="MuiListItem-root MuiListItem-gutters"><a title="Login" class="active" href="/login"
+                          aria-current="page">Login</a></li>
+                      <li class="MuiListItem-root MuiListItem-gutters"><a title="Register" href="/register">Register</a>
+                      </li>
+                    </ul>
+                    <ul class="MuiList-root cart-country-wrap MuiList-padding">
+                      <li class="MuiListItem-root cart-link MuiListItem-gutters"><a title="Cart" href="/cart"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAUCAYAAACTQC2+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjFFRjAyMTM0NjkyQTExRUM5MkI5OTdBQTM5M0U1MjM1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjFFRjAyMTM1NjkyQTExRUM5MkI5OTdBQTM5M0U1MjM1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MUVGMDIxMzI2OTJBMTFFQzkyQjk5N0FBMzkzRTUyMzUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MUVGMDIxMzM2OTJBMTFFQzkyQjk5N0FBMzkzRTUyMzUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz62D0kSAAABlElEQVR42qzWTSgEYRjA8Z1N4aAoB3HhIBeHLbetTXKhOFDi6qDs0Ymbi9qDLVw2RyEpDqRVDqKEi68cnOTrspSvLSWS9X/qUe9O+zEzO0/9at6dd+aZZ+Z9n9ZKhzsygexIoxHvAR+jDGvGuA4RRBHzM5FFRea4Evf4RRM+/azIDLnxHKYwjATkSYZKzPNsr0iiGg94QTNqcaPVeo3JYI4fZRHM64KQSh6xXEISeUuJYJ6TM/jCuHxHzCLjMdGSvLp8iVJYQCt6cIUtD0lkUU3LQbDApDh+MGFU6Tbk4a6LJZIJ6wijHfs4cZkonm8f2SOEM+ygG33mxUVCXnev00QS2+hCG8792rC5IqbVyEZOurh31gJykugAh9oDIy4SrbhNJDGAej2uwkeOfSULq9zoj6/2k04ipWSJ72FDW9Op6sSunhvFBW4Lde9CsYpBY/yGBl2ZR7a5UW1jriv6X+pm1Gg/DDmY6/gbSRyjxRg/aVev0O9l2eYGvFY0hk184xL92nhlb43gTv8GyHZYtF/8J8AAiLVcf1VYDpIAAAAASUVORK5CYII="
+                            alt="cart.png">
+                          <span>0</span>Cart</a></li>
+                      <li class="MuiListItem-root hamburger MuiListItem-gutters"><span></span></li>
+                    </ul>0
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="search-overlay">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+          </div>
+          <div class="header-search-wrapper">
+            <div class="container">
+              <div class="header-search-outer">
+                <div class="header-search-inner">
+                  <div class="text-wrapper">
+                    <div class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth">
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl">
+                        <input aria-invalid="false" id="text" name="text" placeholder="What are you looking for..."
+                          type="text" class="MuiInputBase-input MuiOutlinedInput-input" value="" fdprocessedid="gz151c">
+                        <fieldset aria-hidden="true" class="jss3 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;">
+                          <legend class="jss4" style="width: 0.01px;"><span>​</span></legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div><button
+                    class="MuiButtonBase-root MuiButton-root MuiButton-contained green-btn btn MuiButton-containedPrimary MuiButton-disableElevation"
+                    tabindex="0" type="submit" fdprocessedid="pberuo"><span class="MuiButton-label"><em><img
+                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQxODY2QkI2NjkyQTExRUNCRTgxOTU5QzE4OTBGQTg4IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQxODY2QkI3NjkyQTExRUNCRTgxOTU5QzE4OTBGQTg4Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDE4NjZCQjQ2OTJBMTFFQ0JFODE5NTlDMTg5MEZBODgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDE4NjZCQjU2OTJBMTFFQ0JFODE5NTlDMTg5MEZBODgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4BcWxyAAABeUlEQVR42qSUzytEURTHL+NHaRZvQ9EoiphkIykrKRs2lvbKX6EM/wQLZWHjD8Bm1DRCFsMfwJRiMc3zoySmFHN9D+dNZ67jzdWc+vTO657zve+cd+411lrjMADWQQG8gQ9wC3bBAmhRcmrIFwpcBe823s7AYCPBBNhTkh/AnbLJPRiPE8yI4CrYAUMisAusgJKIuwFJTbAfVITYckyP+kBRiGY0wQ0RsB3XcGYCfHJ8yO2qE7wQgiMegkRW5EzLtVZjTNr82CO4Mn52Kvy0XCDBTvYrxt9ehJ9wBUvs94Kkp+CY8ENXMM9+O1jyEKNNF9mvgvO6VTRyXjSY5izV4IdsivjDvwb7WAQVeTRcIRriLefEzLpx3wcdlgKXoEeUkgMn4JX/JJXZ7ZRPOXPgWZYcMQqu7f+N5jjQbpuorDXwpCTS6TgAM3y1qaJRya51gCkwDNpAGRT4SRaAIzD5q3zPo6YRKF+634ygJho2KxiJUm/LdPV9CTAAO6/JBy0uiRAAAAAASUVORK5CYII="
+                          alt="search">
+                      </em>Search</span>
+                    <span class="MuiTouchRipple-root">
+
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <main>
+        <div class="jss16">
+          <div class="login-page-wrapper">
+            <div class="container">
+              <nav
+                class="MuiTypography-root MuiBreadcrumbs-root breadcrumb-wrapper MuiTypography-body1 MuiTypography-colorTextSecondary"
+                aria-label="breadcrumb">
+                <ol class="MuiBreadcrumbs-ol">
+                  <li class="MuiBreadcrumbs-li">
+                    <a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit"
+                      href="/" title="Home">Home</a>
+                  </li>
+                  <li aria-hidden="true" class="MuiBreadcrumbs-separator">›
+
+                  </li>
+                  <li class="MuiBreadcrumbs-li">
+                    <p class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextPrimary">Login</p>
+                  </li>
+                </ol>
+              </nav>
+              <h1 class="MuiTypography-root MuiTypography-h1">Login or Create an Account</h1>
+              <div class="login-row">
+                <div class="content-col">
+                  <div class="top-content">
+                    <h2 class="MuiTypography-root MuiTypography-h2">New Customer</h2>
+                    <p>Registration is free and easy.</p>
+                    <ul class="MuiList-root bullet-list MuiList-padding">
+                      <li class="MuiListItem-root MuiListItem-gutters">Faster checkout</li>
+                      <li class="MuiListItem-root MuiListItem-gutters">Save multiple shipping addresses</li>
+                      <li class="MuiListItem-root MuiListItem-gutters">View and track orders and more</li>
+                    </ul>
+                  </div>
+                  <div class="btn-wrapper">
+                    <button
+                      class="MuiButtonBase-root MuiButton-root MuiButton-contained pink-btn btn MuiButton-containedPrimary MuiButton-disableElevation"
+                      tabindex="0" type="button" fdprocessedid="5rc60m">
+                      <span class="MuiButton-label">Create an Account</span>
+                      <span class="MuiTouchRipple-root"></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="form-block">
+                  <h2 class="MuiTypography-root MuiTypography-h2">Registered Customers</h2>
+                  <p>If you have an account with us, please log in.</p>
+                  <form>
+                    <div class="form-row-wrapper">
+                      <div class="form-col">
+                        <div class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth">
+                          <label
+                            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+                            data-shrink="false" for="email" id="email-label">Email Address *</label>
+                          <div
+                            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl">
+                            <input aria-invalid="false" autocomplete="off" id="email" name="email" type="text"
+                              class="MuiInputBase-input MuiOutlinedInput-input small" value="" fdprocessedid="3cebn">
+                            <fieldset aria-hidden="true" class="jss3 MuiOutlinedInput-notchedOutline">
+                              <legend class="jss5">
+                                <span>Email Address *</span>
+                              </legend>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-col">
+                        <div class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth">
+                          <label
+                            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+                            data-shrink="false" for="password" id="password-label">Password *</label>
+                          <div
+                            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl">
+                            <input aria-invalid="false" autocomplete="off" id="password" name="password" type="password"
+                              class="MuiInputBase-input MuiOutlinedInput-input small" value="" fdprocessedid="70cl5i">
+                            <fieldset aria-hidden="true" class="jss3 MuiOutlinedInput-notchedOutline">
+                              <legend class="jss5">
+                                <span>Password *</span>
+                              </legend>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="btn-wrapper">
+                        <button
+                          class="MuiButtonBase-root MuiButton-root MuiButton-contained pink-btn btn MuiButton-containedPrimary MuiButton-disableElevation"
+                          tabindex="0" type="submit" fdprocessedid="83bbixk"><span
+                            class="MuiButton-label">Login</span><span class="MuiTouchRipple-root"></span></button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="jss8">
+        <footer class="site-footer" id="footer">
+          <div class="bottom-footer">
+            <div class="container">
+              <div class="text-center">
+                <div class="footer-logo"><a title="logo" href="/"><img
+                      src="/static/media/site-logo.005b78aa01d0b4eadda3fa91c02202c5.svg" alt="sitelogo"></a></div>
+                <p class="copyright-text">© 2015 Tatvasoft.com. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <div class="Toastify"></div>
+  </div>
+</body>
+
 </html>
